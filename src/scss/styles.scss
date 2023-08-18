@@ -1,0 +1,29 @@
+// Abstracts
+@import './abstracts/variables.scss';
+
+// Base
+@import './base/normalize.scss';
+@import './base/reset.scss';
+
+// Layout
+@import './layout/grid.scss';
+
+// Components
+@import './components/pageHeader.scss';
+@import './components/ourWork.scss';
+
+@import './components/content.scss';
+@import './components/img.scss';
+@import './components/client.scss';
+@import './components/recentProjects.scss';
+@import './components/blog.scss';
+
+@import './components/footer.scss';
+
+
+
+
+
+
+
+
