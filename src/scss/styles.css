@@ -72,7 +72,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -313,7 +314,7 @@ template {
 
 :root {
   --grid: 12;
-  --grid-container-width: 1700px;
+  --grid-container-width: 1200px;
   --grid-container-gap: 15px;
   --grid-col-gap-vertical: 30px;
   --grid-col-gap-horizontal: 30px;
@@ -403,7 +404,6 @@ h6 {
   }
 }
 .page-header {
-  position: relative;
   height: 500px;
 }
 
@@ -450,7 +450,6 @@ h6 {
 
 .page-header__menu {
   display: flex;
-  width: 470px;
   justify-content: center;
   align-items: center;
 }
@@ -507,6 +506,9 @@ h6 {
 
 .active {
   position: relative;
+}
+
+.active a {
   color: #2D3958;
 }
 
@@ -537,6 +539,7 @@ h6 {
   color: #7B88A8;
   font-size: 20px;
   cursor: pointer;
+  transition: all 0.1s;
 }
 
 .page-header__search:hover {
@@ -552,6 +555,7 @@ h6 {
   font-size: 20px;
   cursor: pointer;
   position: relative;
+  transition: all 0.1s;
 }
 
 .page-header__bag:hover {
@@ -587,6 +591,7 @@ h6 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.4s;
 }
 
 .btn-signup:hover {
@@ -597,12 +602,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(100%);
 }
 
 .our-work__heading {
@@ -646,6 +646,7 @@ h6 {
   align-items: center;
   flex-direction: column;
   margin-bottom: 120px;
+  padding: 0px 30px;
 }
 
 .img__heading {
@@ -697,6 +698,7 @@ h6 {
   font-weight: 500;
   line-height: 160%;
   text-transform: uppercase;
+  transition: background-color 0.4s;
 }
 
 .img__btn:hover {
@@ -706,7 +708,7 @@ h6 {
 
 .client {
   width: 100%;
-  height: 781px;
+  padding-bottom: 120px;
   background-color: #F8FAFC;
   overflow: hidden;
 }
@@ -729,13 +731,11 @@ h6 {
   font-weight: 400;
   line-height: 145.455%;
   padding: 10px 0px;
-  margin-bottom: 70px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
 }
 
 .client__btn {
@@ -751,29 +751,27 @@ h6 {
   gap: 16px;
   font-size: 14px;
   color: #FFF;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  transform: translate(-300%, -24%);
+  transform: translate(500%, -66%);
 }
 
 .client__btn i:first-child {
   padding: 15px 0px 15px 15px;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 .client__btn i:first-child:hover {
   color: #4F77FF;
-  cursor: pointer;
 }
 
 .client__btn i:last-child {
   padding: 15px 15px 15px 0px;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 .client__btn i:last-child:hover {
   color: #4F77FF;
-  cursor: pointer;
 }
 
 .client__feedback {
@@ -791,6 +789,7 @@ h6 {
   justify-content: center;
   flex-direction: column;
   margin: 0px 15px;
+  transition: box-shadow 0.4s;
 }
 
 .client__item:hover {
@@ -878,6 +877,7 @@ h6 {
   border-radius: 20px;
   border: 1px solid #E7E5EA;
   padding: 6px 14px;
+  transition: all 0.4s;
 }
 
 .recent-projects__icon:hover {
@@ -898,6 +898,7 @@ h6 {
   align-items: center;
   flex-direction: column;
   border-radius: 24px;
+  transition: all 0.4s;
 }
 
 .recent-projects__item:hover {
@@ -1033,7 +1034,7 @@ h6 {
   padding-top: 5px;
 }
 
-.blog-more__head {
+.blog__item--more {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -1046,9 +1047,7 @@ h6 {
 
 .footer {
   background-color: #292F3A;
-  height: 546px;
-  position: relative;
-  z-index: 1;
+  padding: 100px 0px 20px 0px;
 }
 
 .footer__logo {
@@ -1098,6 +1097,7 @@ h6 {
   font-weight: 500;
   line-height: 171.429%;
   text-transform: uppercase;
+  transition: all 0.3s;
 }
 
 .footer__link:hover {
@@ -1145,6 +1145,7 @@ h6 {
   line-height: 171.429%;
   text-transform: uppercase;
   margin-left: 8px;
+  transition: all 0.3s;
 }
 
 .footer__btn:hover {
@@ -1186,10 +1187,9 @@ h6 {
   font-size: 54px;
   color: #4F77FF;
   padding: 0px 6px;
+  transition: all 0.3s;
 }
 
 .footer__socials-link:hover {
   color: #85a0fa;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

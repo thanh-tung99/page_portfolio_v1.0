@@ -4,10 +4,12 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 120px;
+  padding: 0px 30px;
 }
 
 .img__heading {
   color: #2D3958;
+  text-align: center;
   font-family: Outfit;
   font-size: 64px;
   font-style: normal;
@@ -20,7 +22,7 @@
   margin-bottom: 70px;
 }
 
-.img__item {
+.img__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,8 +30,20 @@
   gap: 30px;
 }
 
+.img__item {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 .img__item img {
   width: 100%;
+  height: 100%;
+  transition: scale 400ms;
+}
+
+.img__item img:hover {
+  cursor: pointer;
+  scale: 120%;
 }
 
 .img__btn {
@@ -42,4 +56,10 @@
   font-weight: 500;
   line-height: 160%;
   text-transform: uppercase;
+  transition: background-color 0.4s;
+}
+
+.img__btn:hover {
+  cursor: pointer;
+  background-color: #c6c5c9;
 }/*# sourceMappingURL=img.css.map */

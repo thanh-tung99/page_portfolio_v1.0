@@ -1,0 +1,89 @@
+.recent-projects {
+  margin: 120px 0px;
+}
+
+.recent-projects__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent-projects__heading {
+  color: #2D3958;
+  font-family: Outfit;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 116.667%;
+  padding: 20px 0px;
+  margin-bottom: 56px;
+}
+
+.recent-projects__arrow {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.recent-projects__icon {
+  border-radius: 20px;
+  border: 1px solid #E7E5EA;
+  padding: 6px 14px;
+  transition: all 0.4s;
+}
+
+.recent-projects__icon:hover {
+  cursor: pointer;
+  color: #FFF;
+  background-color: #85a0fa;
+}
+
+.recent-projects__choose {
+  color: #FFF;
+  background-color: #4F77FF;
+}
+
+.recent-projects__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 24px;
+  transition: all 0.4s;
+}
+
+.recent-projects__item:hover {
+  cursor: pointer;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.5);
+}
+
+.recent-projects__img {
+  width: 100%;
+}
+
+.recent-projects__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+}
+
+.recent-projects__name {
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 145.455%;
+}
+
+.recent-projects__sub {
+  color: #E7E5EA;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 155.556%;
+}/*# sourceMappingURL=recentProjects.css.map */
