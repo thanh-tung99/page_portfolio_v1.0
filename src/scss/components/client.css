@@ -22,12 +22,17 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 145.455%;
-  padding: 10px 0px;
+  padding: 30px 0px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .client__sub {
+    padding: 10px 0px;
+  }
 }
 
 .client__btn {
@@ -37,13 +42,18 @@
   border-radius: 50%;
   border: 1px solid rgba(79, 119, 255, 0.2);
   box-shadow: 0px 0px 22px 22px rgba(79, 119, 255, 0.2);
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   font-size: 14px;
   color: #FFF;
   transform: translate(500%, -66%);
+  display: none;
+}
+@media (min-width: 1200px) {
+  .client__btn {
+    display: flex;
+  }
 }
 
 .client__btn i:first-child {
@@ -129,10 +139,38 @@
   padding-top: 15px;
 }
 
-.client__next {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateX(100%);
-  opacity: 0.5;
+@media (min-width: 992px) {
+  .client__next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0.5;
+  }
+}
+.client__btn-mo {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .client__btn-mo {
+    display: none;
+  }
+}
+
+.client__btn-mo i {
+  border-radius: 20px;
+  border: 1px solid #E7E5EA;
+  padding: 6px 14px;
+  transition: all 0.4s;
+}
+
+.client__btn-mo i:hover {
+  cursor: pointer;
+  color: #FFF;
+  background-color: #85a0fa;
 }/*# sourceMappingURL=client.css.map */

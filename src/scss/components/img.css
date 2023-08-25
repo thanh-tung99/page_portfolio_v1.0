@@ -11,13 +11,17 @@
   color: #2D3958;
   text-align: center;
   font-family: Outfit;
-  font-size: 64px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 500;
   line-height: 112.5%;
   padding: 120px 20px 90px 20px;
 }
-
+@media (min-width: 768px) {
+  .img__heading {
+    font-size: 64px;
+  }
+}
 .img__content {
   margin-bottom: 70px;
 }
@@ -33,6 +37,10 @@
 .img__item {
   border-radius: 20px;
   overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .img__item img {

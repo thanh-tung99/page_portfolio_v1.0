@@ -29,13 +29,38 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 145.455%;
-    padding: 10px 0px;
+    padding: 30px 0px;
     text-align: center;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 575px) {
+        
+        
+    }
+        
+    @media (min-width: 575px) {
+      
+            
+    }
+        
+    @media (min-width: 768px) {
+      
+            
+    }
+        
+    @media (min-width: 992px) {
+        
+    }
+    
+    @media (min-width: 1200px) {
+        padding: 10px 0px;
+            
+            
+    }
 
 }
 
@@ -48,7 +73,7 @@
     border: 1px solid rgba(79, 119, 255, 0.20);
     box-shadow: 0px 0px 22px 22px rgba(79, 119, 255, 0.20);
 
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
@@ -56,6 +81,33 @@
     color: #FFF;
 
     transform: translate(500%, -66%);
+
+    display: none;
+
+    @media (max-width: 575px) {
+        
+        
+    }
+        
+    @media (min-width: 575px) {
+      
+            
+    }
+        
+    @media (min-width: 768px) {
+        
+    }
+    
+    @media (min-width: 992px) {
+        
+        
+    }
+    
+    @media (min-width: 1200px) {
+        display: flex;
+            
+            
+    }
 
 }
 
@@ -159,9 +211,87 @@
 }
 
 .client__next {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(100%);
-    opacity: 0.5;
+    
+    @media (max-width: 575px) {
+        
+        
+    }
+    
+    @media (min-width: 575px) {
+        
+        
+    }
+    
+    @media (min-width: 768px) {
+        
+        
+    }
+    
+    @media (min-width: 992px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        opacity: 0.5;
+        
+        
+    }
+    
+    @media (min-width: 1200px) {
+        
+            
+    }
+
+}
+
+
+// client button on mobile
+.client__btn-mo {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 50px;
+
+    @media (max-width: 575px) {
+        
+        
+    }
+        
+    @media (min-width: 575px) {
+      
+            
+    }
+        
+    @media (min-width: 768px) {
+      
+            
+    }
+        
+    @media (min-width: 992px) {
+            
+            
+    }
+    
+    @media (min-width: 1200px) {
+        display: none;
+            
+    }
+
+}
+
+.client__btn-mo i {
+    border-radius: 20px;
+    border: 1px solid #E7E5EA;
+    padding: 6px 14px;
+    transition: all 0.4s;
+
+}
+
+.client__btn-mo i:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #85a0fa;
+
 }

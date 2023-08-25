@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 56px;
 }
 
 .recent-projects__heading {
@@ -15,7 +16,6 @@
   font-weight: 500;
   line-height: 116.667%;
   padding: 20px 0px;
-  margin-bottom: 56px;
 }
 
 .recent-projects__arrow {

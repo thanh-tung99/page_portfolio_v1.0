@@ -9,11 +9,37 @@
     color: #2D3958;
     text-align: center;
     font-family: Outfit;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 500;
     line-height: 116.667%;
     padding: 20px 0px;
     margin-bottom: 60px;
+
+    @media (max-width: 575px) {
+        
+        
+    }
+        
+    @media (min-width: 575px) {
+      
+            
+    }
+        
+    @media (min-width: 768px) {
+      
+            
+    }
+        
+    @media (min-width: 992px) {
+        font-size: 48px;
+            
+            
+    }
+    
+    @media (min-width: 1200px) {
+            
+            
+    }
 
 }
 
@@ -55,6 +81,13 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 145.455%;
+    height: 100px;
+
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;   
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 
 }
 
@@ -64,6 +97,38 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 155.556%;
+
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;   
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+
+    @media (max-width: 575px) {
+        
+        
+    }
+        
+    @media (min-width: 575px) {
+      
+            
+    }
+        
+    @media (min-width: 768px) {
+        -webkit-line-clamp: 2;
+        
+        
+    }
+    
+    @media (min-width: 992px) {
+        
+        
+    }
+    
+    @media (min-width: 1200px) {
+        -webkit-line-clamp: 3;
+            
+    }
 
 }
 
@@ -121,15 +186,39 @@
 }
 
 // blog more
+.blog__name-second {
+    color: #2D3958;
+    font-family: Outfit;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 136%;
+    height: 118px;
+
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;   
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+
+
+}
+
 .blog__item--more {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
+    width: 100%;
 
 }
 
 .blog-more__img {
-    width: 50%;
+    width: 100px;
+
+}
+
+.blog__item:hover .blog__name-second {
+    text-decoration: underline;
+    color: #4F77FF;
 
 }
