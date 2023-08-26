@@ -3,29 +3,38 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 120px;
   padding: 0px 30px;
+  margin-bottom: 60px;
 }
-
+@media (min-width: 768px) {
+  .img {
+    margin-bottom: 120px;
+  }
+}
 .img__heading {
   color: #2D3958;
   text-align: center;
   font-family: Outfit;
-  font-size: 50px;
+  font-size: 46px;
   font-style: normal;
   font-weight: 500;
   line-height: 112.5%;
-  padding: 120px 20px 90px 20px;
+  padding: 50px 0px;
 }
 @media (min-width: 768px) {
   .img__heading {
     font-size: 64px;
+    padding: 120px 20px 90px 20px;
   }
 }
 .img__content {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
-
+@media (min-width: 768px) {
+  .img__content {
+    margin-bottom: 70px;
+  }
+}
 .img__list {
   display: flex;
   justify-content: center;

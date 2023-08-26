@@ -1,7 +1,11 @@
 .recent-projects {
-  margin: 120px 0px;
+  margin: 50px 0px;
 }
-
+@media (min-width: 768px) {
+  .recent-projects {
+    margin: 120px 0px;
+  }
+}
 .recent-projects__head {
   display: flex;
   justify-content: space-between;
@@ -12,12 +16,16 @@
 .recent-projects__heading {
   color: #2D3958;
   font-family: Outfit;
-  font-size: 48px;
   font-weight: 500;
   line-height: 116.667%;
   padding: 20px 0px;
+  font-size: 40px;
 }
-
+@media (min-width: 768px) {
+  .recent-projects__heading {
+    font-size: 48px;
+  }
+}
 .recent-projects__arrow {
   font-size: 20px;
   display: flex;

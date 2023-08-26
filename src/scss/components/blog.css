@@ -1,17 +1,27 @@
 .blog {
   background-color: #F8FAFC;
-  padding-bottom: 120px;
+  padding: 70px 0px;
 }
-
+@media (min-width: 768px) {
+  .blog {
+    padding: 120px 0px;
+  }
+}
 .blog__heading {
   color: #2D3958;
   text-align: center;
   font-family: Outfit;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 500;
   line-height: 116.667%;
   padding: 20px 0px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .blog__heading {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
 }
 @media (min-width: 992px) {
   .blog__heading {
@@ -136,7 +146,7 @@
   -webkit-line-clamp: 4;
 }
 
-.blog__item--more {
+.blog__item-head {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -144,7 +154,7 @@
   width: 100%;
 }
 
-.blog-more__img {
+.blog__item-img {
   width: 100px;
 }
 

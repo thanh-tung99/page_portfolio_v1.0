@@ -1,5 +1,27 @@
 .recent-projects {
-    margin: 120px 0px;
+    margin: 50px 0px;
+
+    @media (max-width: 575px) {
+        
+    }
+        
+    @media (min-width: 575px) {
+            
+    }
+        
+    @media (min-width: 768px) {
+        margin: 120px 0px;
+         
+    }
+        
+    @media (min-width: 992px) {
+             
+    }
+    
+    @media (min-width: 1200px) {
+            
+    }
+
 }
 
 
@@ -14,10 +36,31 @@
 .recent-projects__heading {
     color: #2D3958;
     font-family: Outfit;
-    font-size: 48px;
     font-weight: 500;
     line-height: 116.667%;
     padding: 20px 0px;
+    font-size: 40px;
+
+    @media (max-width: 575px) {
+        
+    }
+        
+    @media (min-width: 575px) {
+            
+    }
+        
+    @media (min-width: 768px) {
+        font-size: 48px;
+         
+    }
+        
+    @media (min-width: 992px) {
+             
+    }
+    
+    @media (min-width: 1200px) {
+            
+    }
 
 }
 
